@@ -1,0 +1,151 @@
+
+### ONLINE TALENTHUB API WELCOME PAGE
+GET http://thubapi.devformula.com/
+
+###
+
+POST http://thubapi.devformula.com/api/v2/talenthubs/profile/postnewcomment
+Content-Type: application/json
+
+{
+   "email": "idigits.solutions@gmail.com",
+	"imagedata": "data:image/png;base64,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",
+   "imagename": "cjeckingrecordstactic.jpeg",
+   "comments": "Testing a New post comments texts as available",
+   "imagetype": "photos"  
+}
+
+
+
+
+### LIST OF OUR API ROUTE
+
+### REGISTER NEW USERS
+POST http://thubapi.devformula.com/api/v2/talenthubs/users
+Content-Type: application/json
+
+{
+   "email": "digimyxt@gmail.com",
+   "password": "digimyxt#007"
+}
+
+### RESEND OTP
+POST http://thubapi.devformula.com/api/v2/talenthubs/resend/otp
+Content-Type: application/json
+
+{"email":"idigits.solutions@gmail.com"}
+
+
+### verify OTP
+POST  http://thubapi.devformula.com/api/v2/talenthubs/verify/otp
+Content-Type: application/json
+
+{
+   "verification_key": "wSCAjdXVlLHZkxhaHx71qgb8IVPV6Y6Q0qii0vHtbR5UhGDSGKf9FOiHZZvY6+LeUGoVfDQOmx32DLuq7obZNf9KQSi/jOFulXyNGZ0WtpU2G7jzJXQfjE4g5QlglSectG4GvJEXvKtKTbsLRqsqTkd8+gsuaR+DLtdvdrHtVm0nV+v048uVfnDoT+aIoLLO",
+   "otp": "256554",
+   "check": "idigits.solutions@gmail.com"
+}
+
+
+### LOGIN TO ACCOUNT
+POST http://thubapi.devformula.com/api/v2/talenthubs/auth
+Content-Type: application/json
+
+{
+   "email": "idigits.solutions@gmail.com",
+   "password": "idigits#0078"
+}
+
+
+### UPDATE RESET PASSWORD
+POST http://thubapi.devformula.com/api/v2/talenthubs/updatepassword
+Content-Type: application/json
+
+{
+   "email": "digimyxt@gmail.com",
+   "password": "digimyxt#007"
+}
+
+### RESET PASSWORD
+POST http://thubapi.devformula.com/api/v2/talenthubs/resetpassword
+Content-Type: application/json
+
+{
+   "email": "idigits.solutions@gmail.com"
+}
+
+### RESEND OTP
+POST http://thubapi.devformula.com/api/v2/talenthubs/resend/otp
+Content-Type: application/json
+
+{
+   "email": "idigits.solutions@gmail.com"
+}
+
+### REFRESH TOKENS
+GET http://thubapi.devformula.com/api/v2/talenthubs/auth/refresh
+Content-Type: "application/json"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZ2lteXh0QGdtYWlsLmNvbSIsInVzb2NpYWxpZCI6IjE1MWU3MjlmLWZkOWMtNDk3OS1hMGE3LWYzMTRhOGI0MDRkNSIsImlhdCI6MTY0MTU0MjkwMX0.UqFUcAoVWVeAP-FtYguA88tleQpAus3GYj9XOboZCuU
+
+
+
+
+### LOGOUT USER
+POST http://thubapi.devformula.com/api/v2/talenthubs/auth/logout
+Content-Type: "application/json"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpZ2lteXh0QGdtYWlsLmNvbSIsInVzb2NpYWxpZCI6IjE1MWU3MjlmLWZkOWMtNDk3OS1hMGE3LWYzMTRhOGI0MDRkNSIsImlhdCI6MTY0MTU0MjkwMX0.UqFUcAoVWVeAP-FtYguA88tleQpAus3GYj9XOboZCuU
+
+
+### GETTING ALL Talenters / USERS
+
+POST http://thubapi.devformula.com/api/v2/talenthubs/
+
+
+
+### DELETE Talenter / USERS BY ID http://thubapi.devformula.com/
+
+DELETE http://thubapi.devformula.com/api/v2/talenthubs/users/5
+
+
+### GETTING LAST TEN OTP
+POST http://thubapi.devformula.com/api/v2/talenthubs/otp/loadlastotp
+
+
+### GETTING ALL OTP
+POST http://thubapi.devformula.com/api/v2/talenthubs/otp/loadallotp
+
+### DELETE OTP BY ID
+DELETE http://thubapi.devformula.com/api/v2/talenthubs/otp/4
+
+
+### Find Profile by Email
+
+POST http://thubapi.devformula.com/api/v2/talenthubs/profile/viewpro
+Content-Type: application/json
+
+{
+   "email": "idigits.solutions@gmail.com"
+}
+
+
+### Update Profile
+
+POST http://thubapi.devformula.com/api/v2/talenthubs/profile/updateprofile
+Content-Type: application/json
+
+{
+   "firstname": "Adeyinka",
+   "lastname": "Okegbemi",
+   "mobile": "08180957991",
+   "gender": "Male",
+   "date_of_birth": "1981-09-10",   
+   "skillset" : "Techie",
+   "height" : "6",
+   "bodytype" : "Muscular",
+   "complexion" : "Fair",
+   "state" : "Lagos",
+   "city" : "Maroko",
+   "state_of_origin" : "Ogun",
+   "privacy" : 1,
+   "email": "idigits.solutions@gmail.com"
+}
