@@ -1,1 +1,5 @@
 node_modules/
+*.env
+config-online.env
+config.env
+.env
